@@ -17,7 +17,7 @@ nav {
     padding: 1rem;
     align-items: center;
     font-size: 1.5rem;
-    
+    z-index: 10;
 }
 .navbar {
     display: flex;
@@ -91,12 +91,15 @@ main{
     align-items: center;
     margin: auto;
     padding: 3rem;
+    font-family: 'Architects Daughter', cursive;
+    line-height: 3rem;
 }
 .photoGallery{
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
     flex-direction: row;
+    margin-top: 1rem;
 }
 .photoGallery img{
     width: 300px;
@@ -106,6 +109,9 @@ main{
 }
 .sider h2{
     text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    color: rgb(24, 23, 23);
 }
 #mainContent{
     display: flex;
@@ -114,13 +120,41 @@ main{
     justify-content: space-between;
     flex-direction: row;
 }
-.flexDiv {
+.flexDiv:nth-child(2n){
+    position: relative;
     display: flex;
     flex: 1;
     width: 60vw;
     margin: 2rem;
+    background-color: #7069939f;
+    border-radius: 3rem;
+    padding: 20px;
+    right: 5rem;
+}
+.flexDiv:nth-child(2n-1){
+    position: relative;
+    display: flex;
+    flex: 1;
+    width: 60vw;
+    margin: 2rem;
+    background-color: #7069939f;
+    border-radius: 3rem;
+    padding: 20px;
+    left: 5rem;
+
 }
 .flexDiv p{
     margin: 2rem;
     align-items: center;
+    font-size: 2rem;
+}
+.flexDiv img:nth-child(2n-1){
+    position: relative;
+    top: 2rem;
+    right: 3rem;
+}
+.flexDiv img:nth-child(2n){
+    position: relative;
+    bottom: 2rem;
+    left: 3rem;
 }
